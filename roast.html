@@ -1,0 +1,1574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#1B1310" id="metaTheme" />
+<title>Haryanvi Roast AI 🔥</title>
+<script>
+  (function(){
+    var t = "tadka";
+    try { t = localStorage.getItem("hra-theme") || "tadka"; } catch(e){}
+    if (["tadka","haldi","khet","mela"].indexOf(t) === -1) t = "tadka";
+    document.documentElement.setAttribute("data-theme", t);
+  })();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #1B1310;
+    --surface: #241A15;
+    --surface-2: #2F2119;
+    --surface-3: #3A281D;
+    --chili: #E8420C;
+    --chili-dim: #B8360D;
+    --marigold: #F5A521;
+    --marigold-dim: #C98317;
+    --text: #FBF1E4;
+    --text-muted: #C7AF9B;
+    --text-faint: #8E7768;
+    --border: rgba(245,165,33,0.22);
+    --border-strong: rgba(245,165,33,0.45);
+    --shadow: 0 20px 45px -20px rgba(0,0,0,0.6);
+    --radius-lg: 26px;
+    --radius-md: 16px;
+    --radius-sm: 10px;
+    --font-display: "Baloo 2", "Segoe UI Rounded", "Noto Sans Devanagari", system-ui, sans-serif;
+    --font-body: "Inter", "Noto Sans Devanagari", system-ui, -apple-system, sans-serif;
+    --accent-soft: rgba(245,165,33,0.14);
+    --accent-faint: rgba(245,165,33,0.08);
+    --glow-1: rgba(232,66,12,0.16);
+    --glow-2: rgba(245,165,33,0.10);
+    --btn-a: #E8420C;
+    --btn-b: #C98317;
+    --btn-shadow: rgba(232,66,12,0.65);
+    --on-accent: #fff;
+    color-scheme: dark;
+  }
+
+  /* ---------- THEMES (Tadka = default, defined above) ---------- */
+  :root[data-theme="haldi"]{
+    --bg: #FFF6E3;
+    --surface: #FFFFFF;
+    --surface-2: #FFF0D2;
+    --surface-3: #FFE6B8;
+    --chili: #CF360A;
+    --chili-dim: #A82B08;
+    --marigold: #A65B00;
+    --marigold-dim: #8A4A00;
+    --text: #2A1A10;
+    --text-muted: #5E4636;
+    --text-faint: #7A6453;
+    --border: rgba(138,74,0,0.25);
+    --border-strong: rgba(138,74,0,0.5);
+    --shadow: 0 18px 40px -22px rgba(90,50,10,0.35);
+    --accent-soft: rgba(166,91,0,0.12);
+    --accent-faint: rgba(166,91,0,0.07);
+    --glow-1: rgba(207,54,10,0.10);
+    --glow-2: rgba(245,165,33,0.22);
+    --btn-a: #CF360A;
+    --btn-b: #8A4A00;
+    --btn-shadow: rgba(207,54,10,0.45);
+    color-scheme: light;
+  }
+  :root[data-theme="khet"]{
+    --bg: #0F1A12;
+    --surface: #16241A;
+    --surface-2: #1D2F22;
+    --surface-3: #26402D;
+    --chili: #34B266;
+    --chili-dim: #24804A;
+    --marigold: #E9C46A;
+    --marigold-dim: #A8852A;
+    --text: #EEF7EC;
+    --text-muted: #B4CDB6;
+    --text-faint: #7E9A84;
+    --border: rgba(233,196,106,0.22);
+    --border-strong: rgba(233,196,106,0.45);
+    --accent-soft: rgba(233,196,106,0.14);
+    --accent-faint: rgba(233,196,106,0.08);
+    --glow-1: rgba(52,178,102,0.16);
+    --glow-2: rgba(233,196,106,0.09);
+    --btn-a: #1F8A4A;
+    --btn-b: #14603A;
+    --btn-shadow: rgba(31,138,74,0.55);
+  }
+  :root[data-theme="mela"]{
+    --bg: #150F26;
+    --surface: #1E1636;
+    --surface-2: #281D47;
+    --surface-3: #33255A;
+    --chili: #F04FB0;
+    --chili-dim: #C02F8A;
+    --marigold: #5EEAD4;
+    --marigold-dim: #2DB8A6;
+    --text: #F6F1FF;
+    --text-muted: #C4B8E4;
+    --text-faint: #8B7FB0;
+    --border: rgba(94,234,212,0.22);
+    --border-strong: rgba(94,234,212,0.45);
+    --accent-soft: rgba(94,234,212,0.14);
+    --accent-faint: rgba(94,234,212,0.08);
+    --glow-1: rgba(240,79,176,0.18);
+    --glow-2: rgba(94,234,212,0.10);
+    --btn-a: #D02A8F;
+    --btn-b: #6D3FD0;
+    --btn-shadow: rgba(208,42,143,0.55);
+  }
+
+  *{ box-sizing: border-box; }
+
+  html{
+    scroll-behavior: smooth;
+    scroll-padding-top: calc(env(safe-area-inset-top, 0px) + 20px);
+  }
+
+  body{
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-body);
+    line-height: 1.55;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body::before{
+    content: "";
+    position: fixed;
+    inset: 0;
+    background:
+      radial-gradient(circle at 12% 8%, var(--glow-1), transparent 42%),
+      radial-gradient(circle at 88% 78%, var(--glow-2), transparent 46%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  a{ color: var(--marigold); }
+  img, svg{ max-width: 100%; display: block; }
+
+  :focus-visible{
+    outline: 2.5px solid var(--marigold);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+
+  .wrap{
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 24px;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* ---------- NAV ---------- */
+  header.site{
+    padding: 22px 0 6px;
+  }
+  .nav-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px 16px;
+  }
+  .brand{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.28rem;
+    letter-spacing: 0.2px;
+  }
+  .brand svg{ width: 30px; height: 30px; flex: none; }
+  .theme-picker{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .theme-picker .theme-label{
+    color: var(--text-faint);
+    font-size: 0.85rem;
+    margin-right: 2px;
+  }
+  .theme-swatch{
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    border-radius: 50%;
+    border: 2px solid var(--border-strong);
+    background: linear-gradient(135deg, var(--sw-a) 50%, var(--sw-b) 50%);
+    cursor: pointer;
+    transition: transform 0.15s ease;
+  }
+  .theme-swatch:hover{ transform: scale(1.08); }
+  .theme-swatch[aria-pressed="true"]{
+    border-color: var(--bg);
+    box-shadow: 0 0 0 2.5px var(--marigold);
+  }
+  @media (max-width: 420px){
+    .brand{ font-size: 1.1rem; }
+  }
+  .nav-tag{
+    color: var(--text-faint);
+    font-size: 0.92rem;
+    display: none;
+  }
+  @media (min-width: 640px){ .nav-tag{ display: block; } }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    padding: 44px 0 40px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 34px;
+    align-items: center;
+  }
+  @media (min-width: 900px){
+    .hero{ grid-template-columns: 1.15fr 0.85fr; gap: 48px; padding: 68px 0 56px; }
+  }
+  .hero h1{
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: clamp(2.1rem, 5.4vw, 3.4rem);
+    line-height: 1.08;
+    margin: 0 0 18px;
+    max-width: 15ch;
+  }
+  .hero h1 .fire-underline{
+    position: relative;
+    display: inline-block;
+  }
+  .hero h1 .fire-underline::after{
+    content: "";
+    position: absolute;
+    left: -2%;
+    right: -2%;
+    bottom: 0.05em;
+    height: 0.34em;
+    background: linear-gradient(90deg, var(--chili), var(--marigold));
+    border-radius: 6px;
+    z-index: -1;
+    opacity: 0.55;
+  }
+  .hero p.lead{
+    color: var(--text-muted);
+    font-size: 1.08rem;
+    max-width: 46ch;
+    margin: 0 0 26px;
+  }
+  .hero-ctas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .btn{
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 0.98rem;
+    border-radius: 999px;
+    padding: 13px 26px;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+  }
+  .btn:active{ transform: translateY(1px) scale(0.99); }
+  .btn-primary{
+    background: linear-gradient(135deg, var(--btn-a), var(--btn-b));
+    color: var(--on-accent);
+    box-shadow: 0 12px 26px -10px var(--btn-shadow);
+  }
+  .btn-primary:hover{ filter: brightness(1.06); }
+  .btn-ghost{
+    background: transparent;
+    color: var(--text);
+    border: 1.5px solid var(--border-strong);
+  }
+  .btn-ghost:hover{ background: var(--accent-faint); }
+  .btn-secondary{
+    background: var(--surface-2);
+    color: var(--text);
+    border: 1px solid var(--border);
+  }
+  .btn-secondary:hover{ background: var(--surface-3); }
+  .btn:disabled{ opacity: 0.45; cursor: not-allowed; }
+  .btn-block{ width: 100%; justify-content: center; }
+  .btn-row{ display: flex; flex-wrap: wrap; gap: 10px; }
+  .btn-row .btn{ flex: 1 1 auto; }
+
+  /* Hero illustration */
+  .hero-art{
+    position: relative;
+    justify-self: center;
+  }
+  .polaroid{
+    background: #fff8ec;
+    border-radius: 14px;
+    padding: 14px 14px 46px;
+    width: min(280px, 78vw);
+    box-shadow: var(--shadow);
+    transform: rotate(-4deg);
+    position: relative;
+  }
+  .polaroid .photo-area{
+    background: linear-gradient(160deg, var(--surface-3), var(--bg));
+    border-radius: 8px;
+    aspect-ratio: 4/5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .polaroid .caption{
+    position: absolute;
+    bottom: 12px;
+    left: 0; right: 0;
+    text-align: center;
+    color: #2c1a10;
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 0.98rem;
+  }
+  .sticker{
+    position: absolute;
+    font-size: 2rem;
+    filter: drop-shadow(0 6px 10px rgba(0,0,0,0.35));
+  }
+  .sticker.s1{ top: -18px; right: -10px; transform: rotate(12deg); }
+  .sticker.s2{ bottom: 30px; left: -26px; transform: rotate(-14deg); font-size: 1.6rem; }
+
+  /* ---------- HOW IT WORKS ---------- */
+  .steps-section{ padding: 10px 0 46px; }
+  .steps-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+    margin-top: 22px;
+  }
+  @media (min-width: 760px){ .steps-grid{ grid-template-columns: repeat(3, 1fr); } }
+  .step-card{
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 20px 20px 22px;
+  }
+  .step-num{
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--marigold);
+    display: block;
+    margin-bottom: 10px;
+  }
+  .step-card h3{
+    font-family: var(--font-display);
+    font-size: 1.12rem;
+    margin: 0 0 6px;
+  }
+  .step-card p{
+    color: var(--text-muted);
+    margin: 0;
+    font-size: 0.95rem;
+  }
+  .section-kicker{
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin: 0;
+  }
+
+  /* ---------- APP CARD ---------- */
+  .app-section{ padding: 6px 0 60px; }
+  .app-card{
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 26px;
+    max-width: 620px;
+    margin: 0 auto;
+    box-shadow: var(--shadow);
+  }
+  @media (min-width: 640px){ .app-card{ padding: 34px; } }
+
+  .field-label{
+    font-weight: 600;
+    font-size: 0.92rem;
+    color: var(--text-muted);
+    margin: 0 0 10px;
+    display: block;
+  }
+  .block{ margin-bottom: 26px; }
+  .block:last-child{ margin-bottom: 0; }
+
+  .drop-zone{
+    border: 1.5px dashed var(--border-strong);
+    border-radius: var(--radius-md);
+    padding: 26px 18px;
+    text-align: center;
+    cursor: pointer;
+    background: var(--surface-2);
+    transition: border-color 0.15s ease, background 0.15s ease;
+  }
+  .drop-zone:hover, .drop-zone.dragover{
+    border-color: var(--marigold);
+    background: var(--surface-3);
+  }
+  .drop-zone .dz-icon{ font-size: 2rem; margin-bottom: 6px; }
+  .drop-zone .dz-text{ font-weight: 600; }
+  .drop-zone .dz-sub{ color: var(--text-faint); font-size: 0.85rem; margin-top: 4px; }
+  #fileInput{ display: none; }
+
+  .preview-wrap{
+    position: relative;
+    margin-top: 14px;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    display: none;
+    background: #000;
+  }
+  .preview-wrap.active{ display: block; }
+  .preview-wrap img{ width: 100%; max-height: 360px; object-fit: contain; background: #000; }
+  .preview-remove{
+    position: absolute;
+    top: 10px; right: 10px;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    border: none;
+    border-radius: 999px;
+    width: 32px; height: 32px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+
+  /* ---------- CAMERA ---------- */
+  .or-divider{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--text-faint);
+    font-size: 0.82rem;
+    margin: 14px 0;
+  }
+  .or-divider::before, .or-divider::after{
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  .cam-modal{
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: rgba(12,8,6,0.88);
+    padding: calc(env(safe-area-inset-top, 0px) + 16px) 16px calc(env(safe-area-inset-bottom, 0px) + 16px);
+  }
+  .cam-modal.open{ display: flex; }
+  .cam-panel{
+    width: 100%;
+    max-width: 520px;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    background: var(--surface);
+    border: 1px solid var(--border-strong);
+    border-radius: var(--radius-lg);
+    padding: 18px;
+    box-shadow: var(--shadow);
+  }
+  .cam-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.1rem;
+  }
+  .cam-close{
+    background: var(--surface-2);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    width: 34px; height: 34px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  .cam-stage{
+    position: relative;
+    background: #000;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    aspect-ratio: 4/3;
+    min-height: 0;
+  }
+  .cam-stage video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .cam-stage video.mirror{ transform: scaleX(-1); }
+  .cam-status{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+  }
+  .cam-status[hidden]{ display: none; }
+  .cam-actions{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .cam-actions .btn-primary{ flex: 1; justify-content: center; }
+
+  .text-input{
+    width: 100%;
+    background: var(--surface-2);
+    color: var(--text);
+    border: 1.5px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 13px 16px;
+    font: inherit;
+    font-size: 1rem;
+  }
+  .text-input::placeholder{ color: var(--text-faint); }
+  .text-input:hover{ border-color: var(--border-strong); }
+  .field-hint{
+    color: var(--text-faint);
+    font-size: 0.82rem;
+    margin-top: 8px;
+  }
+
+  .pill-group{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .pill{
+    border: 1.5px solid var(--border);
+    background: var(--surface-2);
+    color: var(--text-muted);
+    padding: 9px 16px;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .pill[aria-pressed="true"]{
+    border-color: var(--marigold);
+    background: var(--accent-soft);
+    color: var(--text);
+  }
+
+  .level-row{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .level-row span{ font-size: 1.4rem; }
+  input[type="range"]{
+    flex: 1;
+    accent-color: var(--chili);
+    height: 4px;
+  }
+  .level-name{
+    text-align: center;
+    font-weight: 700;
+    font-family: var(--font-display);
+    margin-top: 8px;
+    color: var(--marigold);
+  }
+
+  .limit-note{
+    font-size: 0.82rem;
+    color: var(--text-faint);
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  /* ---------- RESULT ---------- */
+  #resultSection{ display: none; margin-top: 30px; }
+  #resultSection.active{ display: block; }
+  .result-card{
+    background: linear-gradient(155deg, var(--surface-3), var(--surface-2));
+    border: 1.5px solid var(--border-strong);
+    border-radius: var(--radius-md);
+    padding: 22px;
+  }
+  .result-eyebrow{
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.05rem;
+    margin: 0 0 10px;
+  }
+  .roast-text{
+    font-size: 1.18rem;
+    font-weight: 600;
+    line-height: 1.5;
+    margin: 0 0 16px;
+  }
+  .toast{
+    position: fixed;
+    left: 50%;
+    bottom: calc(env(safe-area-inset-bottom, 0px) + 24px);
+    transform: translateX(-50%) translateY(10px);
+    background: var(--surface-3);
+    border: 1px solid var(--border-strong);
+    color: var(--text);
+    padding: 11px 20px;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    z-index: 50;
+    box-shadow: var(--shadow);
+  }
+  .toast.show{ opacity: 1; transform: translateX(-50%) translateY(0); pointer-events: auto; }
+
+  .report-link{
+    background: none;
+    border: none;
+    color: var(--text-faint);
+    font-size: 0.82rem;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-top: 14px;
+    padding: 0;
+  }
+
+  /* ---------- MEME ---------- */
+  .meme-block{ margin-top: 28px; }
+  .meme-canvas-wrap{
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    background: #000;
+    display: none;
+    margin-bottom: 14px;
+  }
+  .meme-canvas-wrap.active{ display: block; }
+  canvas#memeCanvas{ width: 100%; display: block; }
+  .meme-caption-preview{
+    color: var(--text-muted);
+    font-size: 0.92rem;
+    margin: 0 0 14px;
+  }
+  .meme-caption-preview b{ color: var(--text); }
+
+  /* ---------- PRIVACY / SAFETY ---------- */
+  .notice{
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 16px 18px;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    max-width: 620px;
+    margin: 26px auto 0;
+  }
+  .notice .ic{ font-size: 1.1rem; flex: none; }
+
+  details.safety{
+    max-width: 620px;
+    margin: 14px auto 0;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 4px 18px;
+  }
+  details.safety summary{
+    cursor: pointer;
+    padding: 14px 0;
+    font-weight: 600;
+    font-size: 0.92rem;
+    list-style: none;
+  }
+  details.safety summary::-webkit-details-marker{ display: none; }
+  details.safety summary::before{ content: "🛡️  "; }
+  details.safety p{
+    color: var(--text-muted);
+    font-size: 0.88rem;
+    margin: 0 0 16px;
+  }
+
+  /* ---------- FOOTER ---------- */
+  footer{
+    padding: 40px 0 calc(30px + env(safe-area-inset-bottom, 0px));
+    text-align: center;
+    color: var(--text-faint);
+    font-size: 0.85rem;
+    border-top: 1px solid var(--border);
+    margin-top: 40px;
+  }
+  footer .heart{ color: var(--chili); }
+
+  /* keep side gutters on small screens (section padding shorthand above resets .wrap's) */
+  .hero, .steps-section, .app-section{ padding-left: 24px; padding-right: 24px; }
+
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior: auto; }
+    *{ transition: none !important; animation: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap nav-row">
+    <div class="brand">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M12 2c1 3-2 4-2 7a4 4 0 108 0c0-1-1-1.5-1.5-1 0 1.5-1 1.5-1 0 0-2.5-3.5-3.5-3.5-6z" style="fill:var(--marigold)"/>
+        <path d="M9 13a3 3 0 106 0c0-.6-.4-.9-.8-.6.1.9-.6.9-.6 0 0-1.4-1.8-1.9-1.8-3.4-1 1.6-2.8 2.5-2.8 4z" style="fill:var(--chili)"/>
+      </svg>
+      Haryanvi Roast AI
+    </div>
+    <div class="nav-tag">Desi humor, zero hate 🙏</div>
+    <div class="theme-picker" id="themePicker" role="group" aria-label="Choose theme">
+      <span class="theme-label" aria-hidden="true">🎨 Theme</span>
+      <button type="button" class="theme-swatch" data-theme="tadka" style="--sw-a:#1B1310;--sw-b:#E8420C" aria-label="Tadka theme" title="Tadka" aria-pressed="true"></button>
+      <button type="button" class="theme-swatch" data-theme="haldi" style="--sw-a:#FFF6E3;--sw-b:#CF360A" aria-label="Haldi theme" title="Haldi" aria-pressed="false"></button>
+      <button type="button" class="theme-swatch" data-theme="khet" style="--sw-a:#0F1A12;--sw-b:#34B266" aria-label="Khet theme" title="Khet" aria-pressed="false"></button>
+      <button type="button" class="theme-swatch" data-theme="mela" style="--sw-a:#150F26;--sw-b:#F04FB0" aria-label="Mela theme" title="Mela" aria-pressed="false"></button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero wrap">
+    <div>
+      <h1>Photo daal, <span class="fire-underline">AI te roast</span> le 🔥</h1>
+      <p class="lead">Apni selfie upload kar, Haryanvi ya Hindi mein ek dum desi andaz mein roast paa — meme, awaaz, sab kuch ek hi jagah. Sirf mazaak, kabhi bura nahi.</p>
+      <div class="hero-ctas">
+        <a href="#app" class="btn btn-primary">Roast Shuru Karo 🔥</a>
+        <a href="#how" class="btn btn-ghost">Kaam kaise karta hai?</a>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <div class="polaroid">
+        <div class="photo-area">
+          <svg viewBox="0 0 100 100" width="70%" aria-hidden="true">
+            <circle cx="50" cy="38" r="18" style="fill:var(--marigold)" opacity="0.85"/>
+            <path d="M20 90c2-22 14-34 30-34s28 12 30 34" style="fill:var(--chili)" opacity="0.85"/>
+          </svg>
+        </div>
+        <div class="caption">yeh wali photo? 👀</div>
+      </div>
+      <div class="sticker s1">😂</div>
+      <div class="sticker s2">🔥</div>
+    </div>
+  </section>
+
+  <section class="steps-section wrap" id="how">
+    <h2 class="section-kicker">Teen step, poora tamasha</h2>
+    <div class="steps-grid">
+      <div class="step-card">
+        <span class="step-num">01</span>
+        <h3>Photo daalo ya khicho</h3>
+        <p>Gallery se photo chuno ya camera se seedhi selfie lo — kuch bhi permanently save nahi hota.</p>
+      </div>
+      <div class="step-card">
+        <span class="step-num">02</span>
+        <h3>Naam, bhasha aur level chuno</h3>
+        <p>Haryanvi, Hindi ya dono ka mix — aur 😇 se 🔥 tak roast ki tandka.</p>
+      </div>
+      <div class="step-card">
+        <span class="step-num">03</span>
+        <h3>Roast, meme, awaaz</h3>
+        <p>Ek click mein roast, meme card, aur bolke sunane wala AI voice.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="app-section wrap" id="app">
+    <div class="app-card">
+
+      <div class="block">
+        <span class="field-label">Photo</span>
+        <div class="drop-zone" id="dropZone" role="button" tabindex="0" aria-label="Upload your photo">
+          <div class="dz-icon">📸</div>
+          <div class="dz-text">Choose Photo</div>
+          <div class="dz-sub">JPG, PNG ya WEBP · click karo ya yahan drop karo</div>
+        </div>
+        <input type="file" id="fileInput" accept="image/jpeg,image/png,image/webp" />
+        <input type="file" id="cameraInput" accept="image/*" capture="user" hidden />
+        <div class="or-divider" aria-hidden="true">ya</div>
+        <button type="button" class="btn btn-secondary btn-block" id="cameraBtn">📷 Camera se Photo Lo</button>
+        <div class="preview-wrap" id="previewWrap">
+          <button class="preview-remove" id="removePhoto" aria-label="Remove photo">✕</button>
+          <img id="previewImg" alt="Your uploaded photo preview" />
+        </div>
+      </div>
+
+      <div class="block">
+        <label class="field-label" for="nameInput">Naam (optional)</label>
+        <input type="text" id="nameInput" class="text-input" maxlength="24" autocomplete="given-name" enterkeyhint="go" placeholder="Jaise: Rohit" />
+        <div class="field-hint">Naam daaloge to roast aur meme mein naam se bulayenge.</div>
+      </div>
+
+      <div class="block">
+        <span class="field-label">Language</span>
+        <div class="pill-group" id="langGroup" role="group" aria-label="Choose language">
+          <button class="pill" data-lang="Haryanvi" aria-pressed="false">Haryanvi</button>
+          <button class="pill" data-lang="Hindi" aria-pressed="false">Hindi</button>
+          <button class="pill" data-lang="Haryanvi + Hindi" aria-pressed="true">🔥 Haryanvi + Hindi</button>
+        </div>
+      </div>
+
+      <div class="block">
+        <span class="field-label">Roast Level</span>
+        <div class="level-row">
+          <span>😇</span>
+          <input type="range" id="levelSlider" min="0" max="2" value="1" step="1" aria-label="Roast level" />
+          <span>🔥</span>
+        </div>
+        <div class="level-name" id="levelName">Funny 😂</div>
+      </div>
+
+      <button class="btn btn-primary btn-block" id="roastBtn" style="font-size:1.05rem; padding:16px;">ROAST ME 🔥</button>
+      <div class="limit-note" id="limitNote">Is session mein 20 roast free hain.</div>
+
+      <section id="resultSection" aria-live="polite">
+        <div class="result-card">
+          <p class="result-eyebrow">😂 Tera Roast</p>
+          <p class="roast-text" id="roastText"></p>
+
+          <div class="btn-row">
+            <button class="btn btn-secondary" id="listenBtn">🔊 Suno</button>
+            <button class="btn btn-secondary" id="againBtn">🔄 Fir Se</button>
+            <button class="btn btn-secondary" id="copyBtn">📋 Copy</button>
+            <button class="btn btn-secondary" id="shareBtn">📤 Share</button>
+          </div>
+
+          <button class="report-link" id="reportBtn">🚩 Is roast ko report karo</button>
+        </div>
+
+        <div class="meme-block">
+          <span class="field-label">🤣 Meme</span>
+          <p class="meme-caption-preview">Top: <b id="memeTopPreview"></b> &nbsp;·&nbsp; Bottom: <b id="memeBottomPreview"></b></p>
+          <div class="meme-canvas-wrap" id="memeCanvasWrap">
+            <canvas id="memeCanvas"></canvas>
+          </div>
+          <div class="btn-row">
+            <button class="btn btn-secondary" id="generateMemeBtn">Generate Meme 🖼️</button>
+            <button class="btn btn-secondary" id="downloadMemeBtn" disabled>📥 Download</button>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <div class="notice">
+      <span class="ic">🔒</span>
+      <span>Tumhari photo aur naam sirf tumhare browser mein process hote hain roast/meme banane ke liye — kahin bhi upload ya save nahi hote.</span>
+    </div>
+
+    <details class="safety">
+      <summary>Ye roasts safe kyun hain</summary>
+      <p>Har roast sirf harmless cheezon pe based hota hai — pose, expression, style, background, vibe. Religion, caste, body, disability, ya kisi bhi sensitive cheez pe kabhi comment nahi hota, aur kisi ki pehchaan guess karne ki koshish nahi ki jaati. Savage level bhi sirf zyada natak hai, kabhi mean nahi.</p>
+    </details>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    Sirf mazaak ke liye banaya gaya <span class="heart">♥</span> — kisi ki photo unki permission ke bina mat daalna.
+  </div>
+</footer>
+
+<div class="cam-modal" id="camModal" role="dialog" aria-modal="true" aria-labelledby="camTitle">
+  <div class="cam-panel">
+    <div class="cam-head">
+      <span id="camTitle">📷 Camera</span>
+      <button type="button" class="cam-close" id="camClose" aria-label="Close camera">✕</button>
+    </div>
+    <div class="cam-stage">
+      <video id="camVideo" autoplay playsinline muted></video>
+      <div class="cam-status" id="camStatus">Camera shuru ho raha hai…</div>
+    </div>
+    <div class="cam-actions">
+      <button type="button" class="btn btn-secondary" id="camSwitch" aria-label="Switch camera">🔄 Flip</button>
+      <button type="button" class="btn btn-primary" id="camSnap" disabled>📸 Photo Khicho</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------------------------------------------------------------
+   * NOTE ON HOW THIS DEMO GENERATES ROASTS
+   * -------------------------------------------------------------
+   * This is a pure HTML/CSS/JS site with no server, so it can't safely
+   * call a vision-AI API (that would mean shipping a secret API key to
+   * every visitor's browser). Instead it picks from a large hand-written
+   * bank of playful Haryanvi/Hindi lines, matched to the language and
+   * roast level you pick, and avoids repeating a line until the bank
+   * runs out. To hook this up to a REAL vision model that looks at the
+   * actual photo, add a small backend (e.g. the Python/Streamlit version
+   * of this project) that calls the AI API server-side and swap the
+   * pickRoast() function below for a fetch() to that backend.
+   * ------------------------------------------------------------- */
+
+  var ROASTS = {
+    "Haryanvi": {
+      "Friendly": [
+        "Bhai photo to badi pyaari se, par ye pose thoda zyada practice wala lagta se 😄",
+        "Yo smile dekh ke lagta se aaj mausam pura tera se, chaudhary sahab 😇",
+        "Photo achi khichi se, bas thoda sa 'main hero hoon' wala look chhod de bhai 😄",
+        "Ye angle dekh ke lagta se photographer bhi tera fan ho gya 😇",
+        "Bhai itna soft smile, lagta se kisi ne abhi-abhi jalebi khilai se 😊",
+        "Yo look bilkul chokra-log wala se, gaon ka pyaar dikh rha se 😇"
+      ],
+      "Funny": [
+        "Bhai yo pose dekh ke lag rya se, Instagram pe aaj hi chaudhary banega 😂",
+        "Ye expression dekh ke lagta se abhi-abhi bill dekh ke aaya se 😂",
+        "Itna confidence se khada se jaise gaon ka sarpanch chunav jeet gya ho 😂",
+        "Bhai chashma to aisa laga rakha se jaise Bollywood villain training pe se 😂",
+        "Ye background dekh ke lagta se photo kissi shaadi mein churake li se 😂",
+        "Selfie angle dekh ke lagta se phone bhi confuse ho gya kya karu 😂"
+      ],
+      "Savage": [
+        "Bhai yo pose itna dramatic se jaise TV serial ka climax scene chal rha ho 🔥",
+        "Ye look dekh ke lagta se photo se pehle poori panchayat se permission li se 🔥",
+        "Itna style maar rya se jaise camera ko bhi darr lag gya click karne se 🔥",
+        "Bhai chashma, pose, sab kuch itna filmy se ki director bhi 'cut' bolna bhool gya 🔥",
+        "Ye confidence dekh ke lagta se aaj tu hi is gaon ka superstar ghosit ho gya 🔥",
+        "Itna serious face banaya se jaise exam ka result dekh rha ho aur pass ho gya 🔥"
+      ]
+    },
+    "Hindi": {
+      "Friendly": [
+        "भाई, ये स्माइल देखकर लग रहा है आज का दिन बड़ा शानदार जाने वाला है 😇",
+        "फोटो अच्छी है, बस थोड़ा सा 'मैं हीरो हूं' वाला भाव कम कर दो 😄",
+        "ये पोज़ बहुत प्यारा है, फोटोग्राफर की मेहनत रंग लाई लगती है 😇",
+        "इतनी सॉफ्ट स्माइल देखकर लग रहा है अभी-अभी कुछ मीठा खाया है 😊",
+        "ये लुक बिल्कुल फ्रेंडली नेबर वाला है, सबका मन खुश कर देगा 😇",
+        "फोटो देखकर लगता है आज मूड बड़ा अच्छा है, वाइब्स एकदम पॉजिटिव 😇"
+      ],
+      "Funny": [
+        "भाई, ये पोज़ देखकर लग रहा है आज इंस्टाग्राम पर तहलका मचाने वाला है 😂",
+        "ये एक्सप्रेशन देखकर लगता है अभी-अभी बिल देखकर आया है 😂",
+        "इतना कॉन्फिडेंस है जैसे फ्री वाईफाई मिल गया हो 😂",
+        "चश्मा तो ऐसे लगाया है जैसे विलेन की ट्रेनिंग चल रही हो 😂",
+        "बैकग्राउंड देखकर लगता है फोटो किसी शादी से चुराई गई है 😂",
+        "सेल्फी एंगल देखकर फोन भी कंफ्यूज़ हो गया होगा 😂"
+      ],
+      "Savage": [
+        "ये पोज़ इतना ड्रामैटिक है जैसे सीरियल का क्लाइमैक्स सीन चल रहा हो 🔥",
+        "ये लुक देखकर लगता है फोटो खींचने से पहले पूरी सोसाइटी से परमिशन ली गई है 🔥",
+        "इतना स्टाइल मार रहा है कि कैमरा भी क्लिक करने से डर गया होगा 🔥",
+        "चश्मा, पोज़, सब कुछ इतना फिल्मी है कि डायरेक्टर 'कट' बोलना भूल गया 🔥",
+        "ये कॉन्फिडेंस देखकर लगता है आज से यही मोहल्ले का सुपरस्टार घोषित है 🔥",
+        "इतना सीरियस फेस बनाया है जैसे रिजल्ट देखकर पास हो गया हो 🔥"
+      ]
+    },
+    "Haryanvi + Hindi": {
+      "Friendly": [
+        "भाई, ये स्माइल देखकर लग रहा है आज दिन तेरे नाम से 😇",
+        "फोटो तो प्यारी से बस थोड़ा हीरो वाला भाव कम कर दे यार 😄",
+        "ये पोज़ बड़ा सॉफ्ट सा है, गाँव वाला असली अपनापन दिख रहा है 😇",
+        "इतनी mithi smile दे रखी है, जलेबी खाके आया लगे है क्या 😊",
+        "ये लुक फ्रेंडली neighbour वाला है, सबका मन खुश हो जाए 😇",
+        "फोटो देख के लगे है आज मूड एकदम first-class है 😇"
+      ],
+      "Funny": [
+        "भाई यो पोज़ देख के लगे है आज Insta पे तहलका मचेगा 😂",
+        "ये expression देख के लगे है अभी-अभी bill देख के आया है 😂",
+        "इतना confidence से खड़ा से जैसे free wifi मिल गया हो 😂",
+        "चश्मा तो ऐसा लगाया से जैसे villain की training चल री हो 😂",
+        "background देख के लगे है photo किसी शादी से चुरा ली से 😂",
+        "selfie angle देख के फोन भी सोच में पड़ गया होगा 😂"
+      ],
+      "Savage": [
+        "यो पोज़ इतना dramatic से जैसे serial का climax scene चल रहा हो 🔥",
+        "ये look देख के लगे है photo से पहले पूरी society से permission ली से 🔥",
+        "इतना style मार रहा से कि camera भी click करने से डर गया 🔥",
+        "चश्मा, पोज़, सब कुछ इतना filmy से कि director 'cut' बोलना भूल गया 🔥",
+        "ये confidence देख के लगे है आज से यही गाँव का superstar घोषित से 🔥",
+        "इतना serious face बनाया से जैसे result देख के pass हो गया हो 🔥"
+      ]
+    }
+  };
+
+  /* Lines that roast the NAME itself ({name} is filled in at runtime) */
+  var NAME_ROASTS = {
+    "Haryanvi": {
+      "Friendly": [
+        "{name} naam sun ke hi lagta se banda bhala mannus se 😇",
+        "{name} bhai, tera naam aur smile dono ek number se 😄",
+        "Gaon mein jab bhi {name} aata se, mahaul halka ho jaata se 😊"
+      ],
+      "Funny": [
+        "{name} naam se to lagta se panchayat ka chief guest aa gya 😂",
+        "{name} ne photo aisi khichwayi se jaise naam ki bhi shooting chal ri ho 😂",
+        "Bhai {name}, teri selfie dekh ke to phone ne bhi naam yaad kar liya 😂"
+      ],
+      "Savage": [
+        "{name} naam sunte hi camera ne khud ko tripod pe baandh liya 🔥",
+        "{name}, itne style se photo khichi se ki Filmfare wale bhi naam likh gye 🔥",
+        "{name} ke aage to pose bhi apni practice shuru kar dete se 🔥"
+      ]
+    },
+    "Hindi": {
+      "Friendly": [
+        "{name} नाम सुनते ही लगता है बंदा दिल का बहुत अच्छा है 😇",
+        "{name} भाई, नाम और स्माइल दोनों एकदम नंबर वन हैं 😄",
+        "जब भी {name} फोटो में आता है, माहौल हल्का हो जाता है 😊"
+      ],
+      "Funny": [
+        "{name} नाम से तो लगता है मोहल्ले का चीफ गेस्ट आ गया 😂",
+        "{name} ने ऐसा पोज़ दिया है जैसे नाम की भी शूटिंग चल रही हो 😂",
+        "{name} भाई, तेरी सेल्फी देखकर फोन ने भी नाम याद कर लिया 😂"
+      ],
+      "Savage": [
+        "{name} नाम सुनते ही कैमरे ने खुद को ट्राइपॉड से बांध लिया 🔥",
+        "{name}, इतने स्टाइल से फोटो खिंची है कि फिल्मफेयर वाले भी नाम लिख गए 🔥",
+        "{name} के आगे तो पोज़ भी अपनी प्रैक्टिस शुरू कर देते हैं 🔥"
+      ]
+    },
+    "Haryanvi + Hindi": {
+      "Friendly": [
+        "{name} नाम सुनते ही लगे है बंदा दिल का एकदम साफ़ से 😇",
+        "{name} भाई, नाम और smile दोनों number one से 😄",
+        "जब भी {name} photo में आवे, माहौल हल्का हो जावे 😊"
+      ],
+      "Funny": [
+        "{name} नाम से तो लगे है मोहल्ले का chief guest आ गया 😂",
+        "{name} ने pose ऐसा दिया से जैसे नाम की भी shooting चल री हो 😂",
+        "{name} भाई, तेरी selfie देख के फोन ने भी नाम याद कर लिया 😂"
+      ],
+      "Savage": [
+        "{name} नाम सुनते ही camera ने खुद को tripod से बाँध लिया 🔥",
+        "{name}, इतने style से photo खिंची से कि Filmfare वाले भी नाम लिख गए 🔥",
+        "{name} के आगे तो pose भी अपनी practice शुरू कर दे से 🔥"
+      ]
+    }
+  };
+
+  var NAME_PREFIX = {
+    "Haryanvi": ["Oye {name}, ", "{name} bhai, ", "Sun {name}, "],
+    "Hindi": ["अरे {name}, ", "{name} भाई, ", "सुन {name}, "],
+    "Haryanvi + Hindi": ["ओए {name}, ", "{name} भाई, ", "सुन {name}, "]
+  };
+
+  var MEME_POOL = {
+    "Haryanvi": {
+      top: ["Jab confidence full ho", "Photo se pehle", "Selfie mode ON", "Camera dekh ke", "Panchayat mein aaj", "Jab pose bane filmy"],
+      bottom: ["par photo khichan wala dost zero ho 😂", "phone bhi soch mein pad gya", "muh bana ke ready ho gya", "sab log hairan ho gye", "sabse zyada tali yahi se baji", "director bhi 'cut' bolna bhool gya"]
+    },
+    "Hindi": {
+      top: ["जब कॉन्फिडेंस फुल हो", "फोटो खिंचने से पहले", "सेल्फी मोड ऑन", "कैमरा देखते ही", "आज पंचायत में", "जब पोज़ हो फिल्मी"],
+      bottom: ["पर फोटो खींचने वाला दोस्त ज़ीरो हो 😂", "फोन भी सोच में पड़ गया", "मुँह बनाकर रेडी हो गया", "सब हैरान रह गए", "सबसे ज़्यादा तालियाँ यहीं बजीं", "डायरेक्टर 'कट' बोलना भूल गया"]
+    },
+    "Haryanvi + Hindi": {
+      top: ["जब confidence full हो", "फोटो से पहले", "selfie mode ON", "camera देखते ही", "आज panchayat में", "जब pose हो filmy"],
+      bottom: ["पर photo खींचने वाला दोस्त zero हो 😂", "फोन भी सोच में पड़ गया", "मुँह बनाके ready हो गया", "सब log हैरान रह गए", "सबसे ज़्यादा ताली यहीं बजी", "director 'cut' बोलना भूल गया"]
+    }
+  };
+
+  var LEVELS = ["Friendly", "Funny", "Savage"];
+  var LEVEL_LABELS = {"Friendly": "Friendly 😇", "Funny": "Funny 😂", "Savage": "Savage 🔥"};
+
+  var state = {
+    lang: "Haryanvi + Hindi",
+    level: "Funny",
+    photoDataUrl: null,
+    name: "",
+    usedRoasts: {},   // key "lang|level" -> array of used indices
+    usedMemes: {},
+    roastCount: 0,
+    maxRoasts: 20,
+    currentRoast: "",
+    currentMemeTop: "",
+    currentMemeBottom: ""
+  };
+
+  var els = {
+    dropZone: document.getElementById("dropZone"),
+    fileInput: document.getElementById("fileInput"),
+    nameInput: document.getElementById("nameInput"),
+    themePicker: document.getElementById("themePicker"),
+    metaTheme: document.getElementById("metaTheme"),
+    cameraInput: document.getElementById("cameraInput"),
+    cameraBtn: document.getElementById("cameraBtn"),
+    camModal: document.getElementById("camModal"),
+    camVideo: document.getElementById("camVideo"),
+    camStatus: document.getElementById("camStatus"),
+    camSnap: document.getElementById("camSnap"),
+    camSwitch: document.getElementById("camSwitch"),
+    camClose: document.getElementById("camClose"),
+    previewWrap: document.getElementById("previewWrap"),
+    previewImg: document.getElementById("previewImg"),
+    removePhoto: document.getElementById("removePhoto"),
+    langGroup: document.getElementById("langGroup"),
+    levelSlider: document.getElementById("levelSlider"),
+    levelName: document.getElementById("levelName"),
+    roastBtn: document.getElementById("roastBtn"),
+    limitNote: document.getElementById("limitNote"),
+    resultSection: document.getElementById("resultSection"),
+    roastText: document.getElementById("roastText"),
+    listenBtn: document.getElementById("listenBtn"),
+    againBtn: document.getElementById("againBtn"),
+    copyBtn: document.getElementById("copyBtn"),
+    shareBtn: document.getElementById("shareBtn"),
+    reportBtn: document.getElementById("reportBtn"),
+    memeTopPreview: document.getElementById("memeTopPreview"),
+    memeBottomPreview: document.getElementById("memeBottomPreview"),
+    memeCanvasWrap: document.getElementById("memeCanvasWrap"),
+    memeCanvas: document.getElementById("memeCanvas"),
+    generateMemeBtn: document.getElementById("generateMemeBtn"),
+    downloadMemeBtn: document.getElementById("downloadMemeBtn"),
+    toast: document.getElementById("toast")
+  };
+
+  function showToast(msg){
+    els.toast.textContent = msg;
+    els.toast.classList.add("show");
+    clearTimeout(showToast._t);
+    showToast._t = setTimeout(function(){ els.toast.classList.remove("show"); }, 2400);
+  }
+
+  /* ---------- photo upload ---------- */
+  function setPhoto(dataUrl){
+    state.photoDataUrl = dataUrl;
+    els.previewImg.src = dataUrl;
+    els.previewWrap.classList.add("active");
+    // new photo -> forget which roasts we've used for the "old" one
+    state.usedRoasts = {};
+    state.usedMemes = {};
+    els.resultSection.classList.remove("active");
+    els.memeCanvasWrap.classList.remove("active");
+    els.downloadMemeBtn.disabled = true;
+  }
+
+  function handleFile(file){
+    if (!file) return;
+    var okTypes = ["image/jpeg", "image/png", "image/webp"];
+    if (okTypes.indexOf(file.type) === -1){
+      showToast("Ye format nahi chalega — JPG, PNG ya WEBP try karo 😅");
+      return;
+    }
+    var maxBytes = 8 * 1024 * 1024;
+    if (file.size > maxBytes){
+      showToast("Photo thodi bhaari hai, 8MB se choti try karo 😅");
+      return;
+    }
+    var reader = new FileReader();
+    reader.onload = function(e){ setPhoto(e.target.result); };
+    reader.onerror = function(){
+      showToast("Photo thodi problem kar ri se 😅 Ek aur try kar.");
+    };
+    reader.readAsDataURL(file);
+  }
+
+  els.dropZone.addEventListener("click", function(){ els.fileInput.click(); });
+  els.dropZone.addEventListener("keydown", function(e){
+    if (e.key === "Enter" || e.key === " "){ e.preventDefault(); els.fileInput.click(); }
+  });
+  els.fileInput.addEventListener("change", function(e){
+    handleFile(e.target.files[0]);
+  });
+  ["dragenter","dragover"].forEach(function(evt){
+    els.dropZone.addEventListener(evt, function(e){
+      e.preventDefault(); els.dropZone.classList.add("dragover");
+    });
+  });
+  ["dragleave","drop"].forEach(function(evt){
+    els.dropZone.addEventListener(evt, function(e){
+      e.preventDefault(); els.dropZone.classList.remove("dragover");
+    });
+  });
+  els.dropZone.addEventListener("drop", function(e){
+    var file = e.dataTransfer.files && e.dataTransfer.files[0];
+    handleFile(file);
+  });
+  els.removePhoto.addEventListener("click", function(e){
+    e.stopPropagation();
+    state.photoDataUrl = null;
+    els.fileInput.value = "";
+    els.cameraInput.value = "";
+    els.previewWrap.classList.remove("active");
+    els.resultSection.classList.remove("active");
+  });
+
+  /* ---------- camera capture ---------- */
+  var cam = { stream: null, facing: "user" };
+
+  function camMessage(msg){
+    els.camStatus.textContent = msg;
+    els.camStatus.hidden = false;
+  }
+
+  function stopCamera(){
+    if (cam.stream){
+      cam.stream.getTracks().forEach(function(t){ t.stop(); });
+      cam.stream = null;
+    }
+    els.camVideo.srcObject = null;
+    els.camSnap.disabled = true;
+  }
+
+  function closeCamera(){
+    stopCamera();
+    els.camModal.classList.remove("open");
+    els.cameraBtn.focus();
+  }
+
+  function startCamera(){
+    stopCamera();
+    camMessage("Camera shuru ho raha hai…");
+    navigator.mediaDevices.getUserMedia({
+      video: { facingMode: { ideal: cam.facing }, width: { ideal: 1280 }, height: { ideal: 960 } },
+      audio: false
+    }).then(function(stream){
+      // modal may have been closed while the permission prompt was open
+      if (!els.camModal.classList.contains("open")){
+        stream.getTracks().forEach(function(t){ t.stop(); });
+        return;
+      }
+      cam.stream = stream;
+      els.camVideo.srcObject = stream;
+      els.camVideo.classList.toggle("mirror", cam.facing === "user");
+      els.camVideo.play().catch(function(){});
+      els.camStatus.hidden = true;
+      els.camSnap.disabled = false;
+    }).catch(function(err){
+      var name = err && err.name;
+      if (name === "NotAllowedError" || name === "SecurityError"){
+        camMessage("Camera ki permission nahi mili. Browser settings mein camera allow karo ya gallery se photo chuno.");
+      } else if (name === "NotFoundError" || name === "OverconstrainedError"){
+        camMessage("Is device pe camera nahi mila. Gallery se photo chuno.");
+      } else {
+        camMessage("Camera shuru nahi ho paya. Koi aur app camera use kar rahi ho sakti hai.");
+      }
+    });
+  }
+
+  function openCamera(){
+    var hasLiveCamera = navigator.mediaDevices && navigator.mediaDevices.getUserMedia;
+    if (!hasLiveCamera){
+      // older browser or non-HTTPS page: use the phone's own camera app instead
+      els.cameraInput.click();
+      return;
+    }
+    els.camModal.classList.add("open");
+    els.camSnap.focus();
+    startCamera();
+  }
+
+  function snapPhoto(){
+    var v = els.camVideo;
+    if (!cam.stream || !v.videoWidth){
+      showToast("Camera abhi ready nahi hai, ek second ruko 😅");
+      return;
+    }
+    var canvas = document.createElement("canvas");
+    canvas.width = v.videoWidth;
+    canvas.height = v.videoHeight;
+    canvas.getContext("2d").drawImage(v, 0, 0, canvas.width, canvas.height);
+    setPhoto(canvas.toDataURL("image/jpeg", 0.92));
+    closeCamera();
+    showToast("Photo mil gayi! Ab roast karo 🔥");
+  }
+
+  els.cameraBtn.addEventListener("click", openCamera);
+  els.camSnap.addEventListener("click", snapPhoto);
+  els.camClose.addEventListener("click", closeCamera);
+  els.camSwitch.addEventListener("click", function(){
+    cam.facing = cam.facing === "user" ? "environment" : "user";
+    startCamera();
+  });
+  els.camModal.addEventListener("click", function(e){
+    if (e.target === els.camModal) closeCamera();
+  });
+  document.addEventListener("keydown", function(e){
+    if (e.key === "Escape" && els.camModal.classList.contains("open")) closeCamera();
+  });
+  els.cameraInput.addEventListener("change", function(e){
+    handleFile(e.target.files[0]);
+    els.cameraInput.value = "";
+  });
+  window.addEventListener("pagehide", stopCamera);
+
+  /* ---------- theme ---------- */
+  var THEMES = {
+    tadka: { label: "Tadka", color: "#1B1310" },
+    haldi: { label: "Haldi", color: "#FFF6E3" },
+    khet:  { label: "Khet",  color: "#0F1A12" },
+    mela:  { label: "Mela",  color: "#150F26" }
+  };
+
+  function applyTheme(name, announce){
+    if (!THEMES[name]) name = "tadka";
+    document.documentElement.setAttribute("data-theme", name);
+    els.metaTheme.setAttribute("content", THEMES[name].color);
+    Array.prototype.forEach.call(els.themePicker.querySelectorAll(".theme-swatch"), function(b){
+      b.setAttribute("aria-pressed", b.getAttribute("data-theme") === name ? "true" : "false");
+    });
+    try { localStorage.setItem("hra-theme", name); } catch(e){}
+    if (announce) showToast("Theme badal gaya: " + THEMES[name].label + " 🎨");
+  }
+
+  els.themePicker.addEventListener("click", function(e){
+    var btn = e.target.closest(".theme-swatch");
+    if (!btn) return;
+    applyTheme(btn.getAttribute("data-theme"), true);
+  });
+  // sync buttons + browser bar colour with the theme restored in <head>
+  (function(){
+    var t = document.documentElement.getAttribute("data-theme") || "tadka";
+    if (!THEMES[t]) t = "tadka";
+    els.metaTheme.setAttribute("content", THEMES[t].color);
+    Array.prototype.forEach.call(els.themePicker.querySelectorAll(".theme-swatch"), function(b){
+      b.setAttribute("aria-pressed", b.getAttribute("data-theme") === t ? "true" : "false");
+    });
+  })();
+
+  /* ---------- name ---------- */
+  function cleanName(v){
+    return String(v || "").replace(/[<>{}\\]/g, "").replace(/\s+/g, " ").trim().slice(0, 24);
+  }
+  function fillName(tpl, name){ return tpl.split("{name}").join(name); }
+
+  els.nameInput.addEventListener("input", function(){
+    state.name = cleanName(els.nameInput.value);
+  });
+  els.nameInput.addEventListener("keydown", function(e){
+    if (e.key === "Enter"){ e.preventDefault(); runRoast(); }
+  });
+
+  /* ---------- language + level ---------- */
+  els.langGroup.addEventListener("click", function(e){
+    var btn = e.target.closest(".pill");
+    if (!btn) return;
+    state.lang = btn.getAttribute("data-lang");
+    Array.prototype.forEach.call(els.langGroup.querySelectorAll(".pill"), function(p){
+      p.setAttribute("aria-pressed", p === btn ? "true" : "false");
+    });
+  });
+
+  els.levelSlider.addEventListener("input", function(){
+    state.level = LEVELS[els.levelSlider.value];
+    els.levelName.textContent = LEVEL_LABELS[state.level];
+  });
+
+  /* ---------- pick a non-repeating line from a pool ---------- */
+  function pickFromPool(pool, usedMap, key){
+    if (!usedMap[key]) usedMap[key] = [];
+    var used = usedMap[key];
+    if (used.length >= pool.length) used = usedMap[key] = []; // reset once exhausted
+    var idx;
+    do { idx = Math.floor(Math.random() * pool.length); } while (used.indexOf(idx) !== -1 && used.length < pool.length);
+    used.push(idx);
+    return pool[idx];
+  }
+
+  function pickRoast(){
+    var pool = ROASTS[state.lang][state.level];
+    var key = state.lang + "|" + state.level;
+    return pickFromPool(pool, state.usedRoasts, key);
+  }
+
+  // With a name: half the time roast the name itself, otherwise address them by name
+  function buildRoast(){
+    var name = state.name;
+    if (!name) return pickRoast();
+    if (Math.random() < 0.5){
+      var namePool = NAME_ROASTS[state.lang][state.level];
+      var line = pickFromPool(namePool, state.usedRoasts, "name|" + state.lang + "|" + state.level);
+      return fillName(line, name);
+    }
+    var base = pickRoast().replace(/^(Bhai|भाई)[,\s]+/, "");
+    var prefix = pickFromPool(NAME_PREFIX[state.lang], state.usedRoasts, "prefix|" + state.lang);
+    return fillName(prefix, name) + base;
+  }
+
+  function pickMeme(){
+    var group = MEME_POOL[state.lang];
+    var topKey = state.lang + "|top";
+    var bottomKey = state.lang + "|bottom";
+    var top = pickFromPool(group.top, state.usedMemes, topKey);
+    var bottom = pickFromPool(group.bottom, state.usedMemes, bottomKey);
+    return { top: top, bottom: bottom };
+  }
+
+  /* ---------- roast flow ---------- */
+  function runRoast(){
+    if (!state.photoDataUrl){
+      showToast("Pehle ek photo upload karo bhai! 📸");
+      return;
+    }
+    if (state.roastCount >= state.maxRoasts){
+      showToast("Bhai, session ki limit poori ho gayi 😅 Page refresh karke fir try karo.");
+      return;
+    }
+
+    state.currentRoast = buildRoast();
+    var meme = pickMeme();
+    state.currentMemeTop = state.name ? state.name + ": " + meme.top : meme.top;
+    state.currentMemeBottom = meme.bottom;
+    state.roastCount++;
+
+    els.roastText.textContent = state.currentRoast;
+    els.memeTopPreview.textContent = state.currentMemeTop;
+    els.memeBottomPreview.textContent = state.currentMemeBottom;
+    els.resultSection.classList.add("active");
+    els.memeCanvasWrap.classList.remove("active");
+    els.downloadMemeBtn.disabled = true;
+
+    var remaining = state.maxRoasts - state.roastCount;
+    els.limitNote.textContent = remaining > 0
+      ? "Is session mein " + remaining + " roast aur bache hain."
+      : "Is session ki limit poori ho gayi — refresh karke fir try karo.";
+
+    els.resultSection.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  }
+
+  els.roastBtn.addEventListener("click", runRoast);
+  els.againBtn.addEventListener("click", runRoast);
+
+  /* ---------- listen (Web Speech API) ---------- */
+  els.listenBtn.addEventListener("click", function(){
+    if (!("speechSynthesis" in window)){
+      showToast("Ye browser awaaz support nahi karta 😅");
+      return;
+    }
+    if (!state.currentRoast) return;
+    window.speechSynthesis.cancel();
+    var utter = new SpeechSynthesisUtterance(state.currentRoast);
+    var voices = window.speechSynthesis.getVoices();
+    var hindiVoice = voices.find(function(v){ return /hi[-_]?IN/i.test(v.lang); });
+    if (hindiVoice) utter.voice = hindiVoice;
+    utter.lang = hindiVoice ? hindiVoice.lang : "hi-IN";
+    utter.rate = 0.95;
+    window.speechSynthesis.speak(utter);
+  });
+
+  /* ---------- copy / share ---------- */
+  els.copyBtn.addEventListener("click", function(){
+    if (!state.currentRoast) return;
+    navigator.clipboard.writeText(state.currentRoast).then(function(){
+      showToast("Roast copy ho gaya! 📋");
+    }, function(){
+      showToast("Copy nahi ho paya, manually select karke try karo.");
+    });
+  });
+
+  els.shareBtn.addEventListener("click", function(){
+    if (!state.currentRoast) return;
+    var text = state.currentRoast + "\n\n– Haryanvi Roast AI 🔥";
+    if (navigator.share){
+      navigator.share({ text: text }).catch(function(){});
+    } else {
+      navigator.clipboard.writeText(text).then(function(){
+        showToast("Share supported nahi hai, isliye copy kar diya 📋");
+      });
+    }
+  });
+
+  els.reportBtn.addEventListener("click", function(){
+    showToast("Thanks, is session ke liye note kar liya 🚩");
+    els.reportBtn.disabled = true;
+  });
+
+  /* ---------- meme canvas ---------- */
+  function wrapCanvasText(ctx, text, maxWidth){
+    var words = text.split(" ");
+    var lines = [];
+    var current = "";
+    for (var i = 0; i < words.length; i++){
+      var test = current ? current + " " + words[i] : words[i];
+      if (ctx.measureText(test).width > maxWidth && current){
+        lines.push(current);
+        current = words[i];
+      } else {
+        current = test;
+      }
+    }
+    if (current) lines.push(current);
+    return lines;
+  }
+
+  function drawMemeText(ctx, text, x, yStart, maxWidth, lineHeight, fontPx){
+    ctx.font = "800 " + fontPx + "px 'Baloo 2', system-ui, sans-serif";
+    ctx.textAlign = "center";
+    ctx.lineWidth = Math.max(3, fontPx / 8);
+    ctx.strokeStyle = "black";
+    ctx.fillStyle = "white";
+    var lines = wrapCanvasText(ctx, text, maxWidth);
+    lines.forEach(function(line, i){
+      var y = yStart + i * lineHeight;
+      ctx.strokeText(line, x, y);
+      ctx.fillText(line, x, y);
+    });
+    return lines.length;
+  }
+
+  els.generateMemeBtn.addEventListener("click", function(){
+    if (!state.photoDataUrl || !state.currentMemeTop){
+      showToast("Pehle ek roast generate karo 🔥");
+      return;
+    }
+    var img = new Image();
+    img.onload = function(){
+      var canvas = els.memeCanvas;
+      canvas.width = img.width;
+      canvas.height = img.height;
+      var ctx = canvas.getContext("2d");
+      ctx.drawImage(img, 0, 0);
+
+      var fontPx = Math.max(20, Math.floor(img.width / 14));
+      var lineHeight = fontPx * 1.15;
+      var maxWidth = img.width * 0.9;
+
+      drawMemeText(ctx, state.currentMemeTop.toUpperCase(), img.width / 2, fontPx + 14, maxWidth, lineHeight, fontPx);
+
+      // bottom text: measure lines first so we can anchor from the bottom
+      ctx.font = "800 " + fontPx + "px 'Baloo 2', system-ui, sans-serif";
+      var bottomLines = wrapCanvasText(ctx, state.currentMemeBottom.toUpperCase(), maxWidth);
+      var bottomStartY = img.height - 18 - (bottomLines.length - 1) * lineHeight;
+      drawMemeText(ctx, state.currentMemeBottom.toUpperCase(), img.width / 2, bottomStartY, maxWidth, lineHeight, fontPx);
+
+      els.memeCanvasWrap.classList.add("active");
+      els.downloadMemeBtn.disabled = false;
+      els.memeCanvasWrap.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    };
+    img.src = state.photoDataUrl;
+  });
+
+  els.downloadMemeBtn.addEventListener("click", function(){
+    var link = document.createElement("a");
+    link.download = "haryanvi-roast-meme.png";
+    link.href = els.memeCanvas.toDataURL("image/png");
+    link.click();
+  });
+
+})();
+</script>
+</body>
+</html>
